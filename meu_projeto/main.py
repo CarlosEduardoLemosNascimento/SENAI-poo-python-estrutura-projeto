@@ -1,13 +1,17 @@
 import os
 
-from models.pessoa import Pessoa
+from datetime import date
 from models.enums.sexo import Sexo
+from models.enums.unidade_federativa import UnidadeFederativa
 from models.endereco import Endereco
+from models.pessoa import Pessoa
 
-os.system("cls || clear")
 
-# Instanciando
-pessoa_1 = Pessoa("Marta", 22, Sexo.FEMININO,
-                  Endereco("Rua A", 35))
+# Criando um endereço
+endereco = Endereco("Rua das Flores", "123", "Apto 45", "12345-678", "Salvador", UnidadeFederativa.BAHIA)
 
-print(pessoa_1)
+# Criando uma pessoa
+pessoa = Pessoa(1, "João Silva", date(1990, 5, 21), "9999-9999", "joao.silva@email.com", Sexo.MASCULINO, endereco)
+
+# Exibindo informações da pessoa
+print(pessoa)
