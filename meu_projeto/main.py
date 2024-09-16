@@ -1,10 +1,10 @@
 import os
 
 from datetime import date
-from models.enums.sexo import Sexo
-from models.enums.unidadeFederativa import UnidadeFederativa
-from models.endereco import Endereco
-from models.pessoa import Pessoa
+from meu_projeto.models.enums.sexo import Sexo
+from meu_projeto.models.enums.unidadeFederativa import UnidadeFederativa
+from meu_projeto.models.endereco import Endereco
+from meu_projeto.models.pessoa import Pessoa
 
 os.system("cls || clear")
 

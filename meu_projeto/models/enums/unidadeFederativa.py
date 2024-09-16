@@ -1,4 +1,4 @@
-from enum import Enum
+from enums import Enum
 
 class UnidadeFederativa(Enum):
     BAHIA = ("Bahia", "BA")
