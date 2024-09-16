@@ -1,6 +1,7 @@
-from datetime import date
-from models.endereco import Endereco
 from models.enums.sexo import Sexo
+from models.endereco import Endereco
+from datetime import date
+
 
 class Pessoa:
     def __init__(self, id: int, nome: str, dataNascimento: date, telefone: str, email: str, sexo: Sexo, endereco: Endereco):
@@ -18,5 +19,7 @@ class Pessoa:
                 f"Data de Nascimento: {self.dataNascimento}\n"
                 f"Telefone: {self.telefone}\n"
                 f"Email: {self.email}\n"
-                f"Sexo: {self.sexo}\n"
+                f"Sexo: {self.sexo.texto}\n"
+                f"Sexo: {self.sexo.caractere}\n"
+                #f"Sexo: {self.sexo.}\n"
                 f"Endereço: {self.endereco}")

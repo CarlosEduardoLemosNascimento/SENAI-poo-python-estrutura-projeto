@@ -9,4 +9,5 @@ class Sexo(Enum):
         self.texto = texto
 
     def __str__(self):
-        return self.texto
+        return(f"{self.texto}"
+               f"\n{self.caractere}")
